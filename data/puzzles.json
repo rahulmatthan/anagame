@@ -1,0 +1,46 @@
+{
+  "curated": [
+    {
+      "id": "7d5f148f-3e79-4e53-840e-370743174db6",
+      "date": "2026-02-07",
+      "signatures": [
+        "apt",
+        "apst",
+        "aepst",
+        "aelpst",
+        "adelpst",
+        "adeelpst"
+      ],
+      "words": [
+        "pat",
+        "past",
+        "spate",
+        "pastel",
+        "stapled",
+        "pedestal"
+      ],
+      "createdAt": "2026-02-07T10:43:27.565Z"
+    },
+    {
+      "id": "04f2ee93-d6ac-4ae4-8d5e-d800d4171980",
+      "date": "2026-02-08",
+      "signatures": [
+        "adi",
+        "adim",
+        "adeim",
+        "adeimr",
+        "adeimrs",
+        "addeimrs"
+      ],
+      "words": [
+        "aid",
+        "maid",
+        "media",
+        "admire",
+        "misread",
+        "disarmed"
+      ],
+      "createdAt": "2026-02-07T11:13:00.625Z"
+    }
+  ]
+}

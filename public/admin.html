@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Word Ladder Forge Admin</title>
+    <style>
+      body { font-family: ui-sans-serif, system-ui, -apple-system, sans-serif; margin: 0; background: #f5f7ff; color: #15243f; }
+      main { max-width: 1100px; margin: 0 auto; padding: 20px; }
+      h1 { margin: 0 0 10px; }
+      .card { background: #fff; border: 1px solid #d8e0f2; border-radius: 12px; padding: 14px; margin-bottom: 14px; }
+      label { font-size: 13px; color: #41506f; display: block; margin-bottom: 4px; }
+      input, button { font: inherit; }
+      input { padding: 8px; border: 1px solid #bac8e9; border-radius: 8px; }
+      button { border: 0; border-radius: 8px; padding: 8px 12px; cursor: pointer; background: #133f8a; color: #fff; }
+      .row { display: flex; gap: 10px; align-items: end; flex-wrap: wrap; }
+      .muted { color: #607095; font-size: 13px; }
+      .suggestion { border: 1px solid #d8e0f2; border-radius: 10px; padding: 10px; margin: 8px 0; background: #fafcff; }
+      .words { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+      .inline { display: inline-block; margin-right: 10px; }
+      .ok { color: #1d8a48; }
+      .err { color: #b22d2d; }
+      .small { font-size: 12px; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Word Ladder Forge Admin</h1>
+      <p class="muted">Generate suggestions, then publish one puzzle per date.</p>
+
+      <section class="card">
+        <div class="row">
+          <div>
+            <label for="token">Admin Token</label>
+            <input id="token" type="password" placeholder="ADMIN_TOKEN" />
+          </div>
+          <div>
+            <label for="date">Next Publish Date (auto)</label>
+            <input id="date" type="date" disabled />
+          </div>
+          <div>
+            <label for="count">Suggestion Count</label>
+            <input id="count" type="number" min="1" max="50" value="20" />
+          </div>
+          <button id="refreshBtn" type="button">Generate Suggestions</button>
+          <button id="loadCuratedBtn" type="button">Load Scheduled Puzzles</button>
+        </div>
+        <p id="status" class="small"></p>
+      </section>
+
+      <section class="card">
+        <h2>Bulk Schedule</h2>
+        <p class="muted">Auto-fill many future dates at once (for example, next month).</p>
+        <div class="row">
+          <div>
+            <label for="bulkStartDate">Start Date</label>
+            <input id="bulkStartDate" type="date" />
+          </div>
+          <div>
+            <label for="bulkDays">Number of Days</label>
+            <input id="bulkDays" type="number" min="1" max="90" value="30" />
+          </div>
+          <button id="bulkGenerateBtn" type="button">Generate & Schedule Range</button>
+        </div>
+        <p id="bulkStatus" class="small"></p>
+      </section>
+
+      <section class="card">
+        <h2>Manual Builder</h2>
+        <p class="muted">Start with a 3-letter word, then choose the 4-letter step, then 5, and so on.</p>
+        <div class="row">
+          <div>
+            <label for="startWord">Start Word (3 letters)</label>
+            <input id="startWord" type="text" maxlength="3" placeholder="rat" />
+          </div>
+          <button id="startManualBtn" type="button">Start Chain</button>
+          <button id="undoManualBtn" type="button">Undo Last</button>
+          <button id="publishManualBtn" type="button">Publish Manual Chain</button>
+        </div>
+        <p id="manualStatus" class="small"></p>
+        <div id="manualChain" class="words" style="margin-top:8px;"></div>
+        <div id="manualOptions" style="margin-top:10px;"></div>
+      </section>
+
+      <section class="card">
+        <h2>Suggestions</h2>
+        <div id="suggestions"></div>
+      </section>
+
+      <section class="card">
+        <h2>Scheduled</h2>
+        <div id="curated"></div>
+      </section>
+
+      <script src="/admin.js"></script>
+    </main>
+  </body>
+</html>
