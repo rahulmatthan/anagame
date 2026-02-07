@@ -1,9 +1,6 @@
 const tokenInput = document.getElementById("token");
 const dateInput = document.getElementById("date");
-const countInput = document.getElementById("count");
-const refreshBtn = document.getElementById("refreshBtn");
 const loadCuratedBtn = document.getElementById("loadCuratedBtn");
-const suggestionsEl = document.getElementById("suggestions");
 const curatedEl = document.getElementById("curated");
 const statusEl = document.getElementById("status");
 const startWordInput = document.getElementById("startWord");
@@ -13,17 +10,12 @@ const publishManualBtn = document.getElementById("publishManualBtn");
 const manualStatusEl = document.getElementById("manualStatus");
 const manualChainEl = document.getElementById("manualChain");
 const manualOptionsEl = document.getElementById("manualOptions");
-const bulkStartDateInput = document.getElementById("bulkStartDate");
-const bulkDaysInput = document.getElementById("bulkDays");
-const bulkGenerateBtn = document.getElementById("bulkGenerateBtn");
-const bulkStatusEl = document.getElementById("bulkStatus");
 
 const now = new Date();
 const y = now.getFullYear();
 const m = String(now.getMonth() + 1).padStart(2, "0");
 const d = String(now.getDate()).padStart(2, "0");
 dateInput.value = `${y}-${m}-${d}`;
-bulkStartDateInput.value = `${y}-${m}-${d}`;
 let manualChain = [];
 
 function addDays(isoDate, days) {
@@ -38,11 +30,6 @@ function addDays(isoDate, days) {
 function setStatus(msg, isError = false) {
   statusEl.textContent = msg;
   statusEl.className = isError ? "err small" : "ok small";
-}
-
-function setBulkStatus(msg, isError = false) {
-  bulkStatusEl.textContent = msg;
-  bulkStatusEl.className = isError ? "err small" : "ok small";
 }
 
 function tokenParam() {
@@ -206,62 +193,6 @@ async function publishManualChain() {
   loadCurated();
 }
 
-function renderSuggestions(items) {
-  suggestionsEl.innerHTML = "";
-  if (!items.length) {
-    suggestionsEl.innerHTML = "<p class='muted'>No suggestions returned.</p>";
-    return;
-  }
-
-  items.forEach((item) => {
-    const div = document.createElement("div");
-    div.className = "suggestion";
-
-    const words = item.words.map((w) => w.toUpperCase()).join(" → ");
-    const counts = item.anagramCounts.join(", ");
-
-    div.innerHTML = `
-      <div class="words">${words}</div>
-      <div class="small muted inline">Difficulty: ${item.averageDifficulty}</div>
-      <div class="small muted inline">Anagrams per level: [${counts}]</div>
-      <div style="margin-top:8px;">
-        <button type="button">Publish For Date</button>
-      </div>
-    `;
-
-    div.querySelector("button").addEventListener("click", async () => {
-      const token = tokenInput.value.trim();
-      if (!token) {
-        setStatus("Token is required.", true);
-        return;
-      }
-
-      const resp = await fetch(`/api/admin/puzzles?token=${tokenParam()}`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          autoDate: true,
-          signatures: item.signatures,
-          words: item.words
-        })
-      });
-
-      if (!resp.ok) {
-        const err = await resp.json().catch(() => ({ error: "Failed to publish" }));
-        setStatus(err.error || "Failed to publish puzzle.", true);
-        return;
-      }
-
-      const data = await resp.json().catch(() => ({}));
-      const publishedDate = data && data.puzzle ? data.puzzle.date : "(assigned)";
-      setStatus(`Published puzzle for ${publishedDate}.`);
-      loadCurated();
-    });
-
-    suggestionsEl.appendChild(div);
-  });
-}
-
 function renderCurated(items) {
   curatedEl.innerHTML = "";
   if (!items.length) {
@@ -318,26 +249,6 @@ function renderCurated(items) {
     });
 }
 
-async function loadSuggestions() {
-  const token = tokenInput.value.trim();
-  if (!token) {
-    setStatus("Enter admin token first.", true);
-    return;
-  }
-
-  setStatus("Generating suggestions...");
-  const count = Number(countInput.value || "20");
-  const resp = await fetch(`/api/admin/suggestions?token=${tokenParam()}&count=${count}`);
-  if (!resp.ok) {
-    setStatus("Could not load suggestions (check token).", true);
-    return;
-  }
-
-  const data = await resp.json();
-  renderSuggestions(data.suggestions || []);
-  setStatus(`Loaded ${data.suggestions.length} suggestions.`);
-}
-
 async function loadCurated() {
   const token = tokenInput.value.trim();
   if (!token) {
@@ -363,51 +274,6 @@ async function loadCurated() {
   setStatus(`Loaded ${curated.length} scheduled puzzles.`);
 }
 
-async function bulkGenerateRange() {
-  const token = tokenInput.value.trim();
-  const startDate = bulkStartDateInput.value;
-  const days = Number(bulkDaysInput.value || "30");
-  if (!token) {
-    setBulkStatus("Enter admin token first.", true);
-    return;
-  }
-  if (!startDate) {
-    setBulkStatus("Select a start date.", true);
-    return;
-  }
-
-  setBulkStatus("Generating and scheduling range...");
-  const resp = await fetch(`/api/admin/puzzles/batch?token=${tokenParam()}`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      startDate,
-      days
-    })
-  });
-
-  if (!resp.ok) {
-    const raw = await resp.text();
-    let err = null;
-    try {
-      err = JSON.parse(raw);
-    } catch (_e) {
-      err = null;
-    }
-    const detail = err && err.error ? err.error : raw || `HTTP ${resp.status}`;
-    setBulkStatus(`Bulk scheduling failed: ${detail}`, true);
-    return;
-  }
-
-  const data = await resp.json();
-  setBulkStatus(
-    `Scheduled ${data.createdCount} puzzles from ${data.startDate} across ${data.days} day(s). ` +
-    `${data.skippedOrReusedCount} date(s) already existed or were skipped.`
-  );
-  loadCurated();
-}
-
-refreshBtn.addEventListener("click", loadSuggestions);
 loadCuratedBtn.addEventListener("click", loadCurated);
 startManualBtn.addEventListener("click", startManualChain);
 undoManualBtn.addEventListener("click", () => {
@@ -422,6 +288,5 @@ undoManualBtn.addEventListener("click", () => {
   loadNextManualOptions();
 });
 publishManualBtn.addEventListener("click", publishManualChain);
-bulkGenerateBtn.addEventListener("click", bulkGenerateRange);
 
 renderManualChain();

@@ -4,7 +4,7 @@
   "private": true,
   "description": "Daily curated anagram ladder game",
   "dependencies": {
-    "better-sqlite3": "^11.8.1"
+    "pg": "^8.13.1"
   },
   "scripts": {
     "start": "node server.js"

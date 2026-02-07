@@ -24,6 +24,7 @@ body {
   display: grid;
   place-items: center;
   padding: 1rem;
+  touch-action: manipulation;
 }
 
 .game-shell {
@@ -125,6 +126,14 @@ body {
   flex-wrap: wrap;
 }
 
+.name-input {
+  border: 1px solid #b6bfd4;
+  border-radius: 10px;
+  padding: 0.66rem 0.72rem;
+  font: inherit;
+  min-width: 160px;
+}
+
 .btn {
   border: 0;
   border-radius: 10px;
@@ -132,6 +141,7 @@ body {
   font-family: inherit;
   font-weight: 700;
   cursor: pointer;
+  touch-action: manipulation;
 }
 
 .btn-primary {
@@ -254,6 +264,12 @@ body {
   .controls {
     margin-top: 0.65rem;
     gap: 0.45rem;
+  }
+
+  .name-input {
+    padding: 0.5rem 0.58rem;
+    min-width: 126px;
+    font-size: 0.9rem;
   }
 
   .btn {

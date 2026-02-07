@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Word Ladder Forge</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -32,11 +32,20 @@
           <span class="status-label">Best Length</span>
           <strong id="bestLength">3</strong>
         </div>
+        <div>
+          <span class="status-label">Timer</span>
+          <strong id="timer">00:00.0</strong>
+        </div>
+        <div>
+          <span class="status-label">Fastest</span>
+          <strong id="fastestTime">-</strong>
+        </div>
       </section>
 
       <section class="board" id="board" aria-label="Word board"></section>
 
       <section class="controls">
+        <input id="playerName" class="name-input" type="text" maxlength="24" placeholder="Name (optional)" />
         <button id="shuffleBtn" class="btn btn-muted" type="button">Shuffle</button>
         <button id="submitBtn" class="btn btn-primary" type="button">OK</button>
       </section>

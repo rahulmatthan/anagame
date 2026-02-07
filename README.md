@@ -2,12 +2,13 @@
 
 This app now has:
 - Player site at `/` (daily puzzle)
-- Admin curation site at `/admin` (generate suggestions and publish by date)
+- Admin curation site at `/admin` (manual chain builder and scheduling)
 
 ## Run
 
 ```bash
 cd /Users/rahul/Documents/Anagame
+DATABASE_URL=postgresql://USER:PASSWORD@HOST:6543/postgres?sslmode=require \
 ADMIN_TOKEN=your_secret_token npm start
 ```
 
@@ -19,28 +20,24 @@ Then open:
 
 1. Open `/admin`
 2. Enter `ADMIN_TOKEN`
-3. Use manual builder or suggestions
+3. Use manual builder
 4. Publish chains (dates auto-increment)
 
-Curated puzzles are stored in SQLite:
-- `/Users/rahul/Documents/Anagame/data/puzzles.db`
+Curated puzzles and fastest-time records are stored in Postgres.
 
-On first run, existing JSON data in:
+On first Postgres startup, existing JSON schedule data in:
 - `/Users/rahul/Documents/Anagame/data/puzzles.json`
-is auto-migrated into SQLite.
+is auto-migrated into Postgres (if the table is empty).
 
 ## Deployment Persistence (Important)
 
-To avoid losing schedules on redeploy, your host must keep the `data/` folder on persistent storage.
+Set these environment variables in Render:
+1. `DATABASE_URL` = Supabase connection string (pooled transaction URL recommended)
+2. `ADMIN_TOKEN` = strong secret token
 
-### Render setup
-1. Add a Persistent Disk to the service.
-2. Mount path: `/opt/render/project/src/data`
-3. Redeploy.
-
-This path matches the app's `data/puzzles.db` location.
+No persistent disk is required when using Supabase.
 
 ## Notes
 
-- If no curated puzzle exists for today, the server returns an auto-generated fallback.
+- If no curated puzzle exists for today, players will see a \"No curated puzzle scheduled for today.\" message.
 - Validation is server-side (`/api/validate`) using `dictionary.txt` + seeded custom words.

@@ -6,6 +6,9 @@ const restartBtn = document.getElementById("restartBtn");
 const currentLengthLabel = document.getElementById("currentLength");
 const bestLengthLabel = document.getElementById("bestLength");
 const puzzleDateLabel = document.getElementById("puzzleDate");
+const timerLabel = document.getElementById("timer");
+const fastestTimeLabel = document.getElementById("fastestTime");
+const playerNameInput = document.getElementById("playerName");
 
 let solvedRows = [];
 let currentLetters = [];
@@ -15,6 +18,10 @@ let selectedIndex = null;
 let draggedIndex = null;
 let puzzle = null;
 let animateLastLockedRow = false;
+let timerInterval = null;
+let runStartMs = 0;
+let elapsedMs = 0;
+let scoreSubmitted = false;
 
 function shuffle(array) {
   for (let i = array.length - 1; i > 0; i -= 1) {
@@ -59,6 +66,47 @@ function formatDate(dateStr) {
   const d = new Date(`${dateStr}T00:00:00`);
   if (Number.isNaN(d.getTime())) return dateStr;
   return d.toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" });
+}
+
+function formatElapsed(ms) {
+  const total = Math.max(0, Math.floor(ms));
+  const minutes = Math.floor(total / 60000);
+  const seconds = Math.floor((total % 60000) / 1000);
+  const tenths = Math.floor((total % 1000) / 100);
+  return `${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}.${tenths}`;
+}
+
+function updateTimerLabel() {
+  timerLabel.textContent = formatElapsed(elapsedMs);
+}
+
+function startTimer() {
+  runStartMs = Date.now();
+  elapsedMs = 0;
+  updateTimerLabel();
+  if (timerInterval) clearInterval(timerInterval);
+  timerInterval = setInterval(() => {
+    elapsedMs = Date.now() - runStartMs;
+    updateTimerLabel();
+  }, 100);
+}
+
+function stopTimer() {
+  if (timerInterval) {
+    clearInterval(timerInterval);
+    timerInterval = null;
+  }
+  elapsedMs = Date.now() - runStartMs;
+  updateTimerLabel();
+}
+
+function renderRecord(record) {
+  if (!record || !record.elapsedMs) {
+    fastestTimeLabel.textContent = "-";
+    return;
+  }
+  const by = record.player ? ` (${record.player})` : "";
+  fastestTimeLabel.textContent = `${formatElapsed(record.elapsedMs)}${by}`;
 }
 
 function render() {
@@ -191,6 +239,23 @@ async function validateWord(word, expectedSignature) {
   return resp.json();
 }
 
+async function submitScore() {
+  if (!puzzle || scoreSubmitted) return null;
+  const player = (playerNameInput.value || "").trim() || "Anonymous";
+  const resp = await fetch("/api/score", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      puzzleDate: puzzle.date,
+      elapsedMs,
+      player
+    })
+  });
+  if (!resp.ok) return null;
+  scoreSubmitted = true;
+  return resp.json();
+}
+
 async function submitCurrentWord() {
   if (!puzzle) return;
   clearMessage();
@@ -216,10 +281,18 @@ async function submitCurrentWord() {
     playSuccessBeep();
 
     if (currentLevel === puzzle.signatures.length - 1) {
+      stopTimer();
       currentLetters = [];
       render();
       updateStats();
-      setMessage(`Solved! You finished today's 8-letter puzzle with \"${word}\".`, "success");
+      const scoreResult = await submitScore();
+      if (scoreResult && scoreResult.record) {
+        puzzle.record = scoreResult.record;
+        renderRecord(puzzle.record);
+      }
+      const solvedText = `Solved in ${formatElapsed(elapsedMs)} with \"${word}\".`;
+      const suffix = scoreResult && scoreResult.isNewRecord ? " New fastest record!" : "";
+      setMessage(`${solvedText}${suffix}`, "success");
       shuffleBtn.disabled = true;
       submitBtn.disabled = true;
       return;
@@ -248,12 +321,14 @@ function startPuzzle() {
   currentLevel = 0;
   selectedIndex = null;
   bestLength = 3;
+  scoreSubmitted = false;
   currentLetters = shuffle([...puzzle.signatures[0].toUpperCase().split("")]);
   shuffleBtn.disabled = false;
   submitBtn.disabled = false;
   render();
   updateStats();
   clearMessage();
+  startTimer();
 }
 
 async function loadPuzzle() {
@@ -263,18 +338,24 @@ async function loadPuzzle() {
 
   try {
     const resp = await fetch("/api/puzzle/today");
-    if (!resp.ok) throw new Error("Failed to load puzzle");
+    if (!resp.ok) {
+      const payload = await resp.json().catch(() => ({}));
+      const msg = payload && payload.error ? payload.error : "Failed to load puzzle";
+      throw new Error(msg);
+    }
     puzzle = await resp.json();
     puzzleDateLabel.textContent = formatDate(puzzle.date);
+    renderRecord(puzzle.record || null);
     startPuzzle();
-
-    if (puzzle.source !== "curated") {
-      setMessage("Today's puzzle is auto-generated (no curated puzzle published yet).", "error");
-    }
-  } catch (_err) {
-    setMessage("Could not load puzzle from server.", "error");
+  } catch (err) {
+    setMessage(err.message || "Could not load puzzle from server.", "error");
   }
 }
+
+playerNameInput.value = localStorage.getItem("wordforge_player_name") || "";
+playerNameInput.addEventListener("change", () => {
+  localStorage.setItem("wordforge_player_name", playerNameInput.value.trim());
+});
 
 shuffleBtn.addEventListener("click", () => {
   currentLetters = shuffle([...currentLetters]);
@@ -286,5 +367,9 @@ restartBtn.addEventListener("click", () => {
   if (!puzzle) return;
   startPuzzle();
 });
+
+document.addEventListener("dblclick", (e) => {
+  e.preventDefault();
+}, { passive: false });
 
 loadPuzzle();
