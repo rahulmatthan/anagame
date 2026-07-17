@@ -1,0 +1,47 @@
+{
+  "createdDate" : "2026-02-14T12:24:59Z",
+  "description" : "Anagram chain",
+  "difficulty" : "hard",
+  "id" : "00947E21-7D08-48B5-A5D0-D7D7FECE5FCA",
+  "levels" : [
+    {
+      "id" : "28964A4D-C924-40C5-B146-32B8434CBB6D",
+      "intendedWord" : "BAR",
+      "letterCount" : 3,
+      "letters" : "BAR"
+    },
+    {
+      "addedLetter" : "G",
+      "id" : "BDD89A04-B1D6-4758-A429-219FC09389CD",
+      "intendedWord" : "GRAB",
+      "letterCount" : 4
+    },
+    {
+      "addedLetter" : "E",
+      "id" : "511907B4-A8FD-4691-BB79-6889BE972BFB",
+      "intendedWord" : "BARGE",
+      "letterCount" : 5
+    },
+    {
+      "addedLetter" : "L",
+      "id" : "1FCC08E8-5F4B-45E1-9B50-D0EA478622B4",
+      "intendedWord" : "GARBLE",
+      "letterCount" : 6
+    },
+    {
+      "addedLetter" : "A",
+      "id" : "0477A160-3D94-478D-B403-5C900032EA15",
+      "intendedWord" : "ALGEBRA",
+      "letterCount" : 7
+    },
+    {
+      "addedLetter" : "U",
+      "id" : "E7D62518-062D-4D80-88E3-618C5DB60F4E",
+      "intendedWord" : "ARGUABLE",
+      "letterCount" : 8
+    }
+  ],
+  "modifiedDate" : "2026-02-14T12:24:59Z",
+  "name" : "Lawyers Love This",
+  "version" : "1.0"
+}

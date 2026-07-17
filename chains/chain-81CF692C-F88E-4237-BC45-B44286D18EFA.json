@@ -1,0 +1,47 @@
+{
+  "createdDate" : "2026-02-15T04:02:17Z",
+  "description" : "Anagram chain",
+  "difficulty" : "medium",
+  "id" : "81CF692C-F88E-4237-BC45-B44286D18EFA",
+  "levels" : [
+    {
+      "id" : "70EAC250-C0A5-40B3-AC9B-F912CAFFB7A2",
+      "intendedWord" : "EGO",
+      "letterCount" : 3,
+      "letters" : "EGO"
+    },
+    {
+      "addedLetter" : "R",
+      "id" : "6F1BA375-11B7-43BC-B92D-F9ADCDF359EA",
+      "intendedWord" : "OGRE",
+      "letterCount" : 4
+    },
+    {
+      "addedLetter" : "U",
+      "id" : "0C7AA4EF-9687-4303-8EEE-8302E651EBA6",
+      "intendedWord" : "ROGUE",
+      "letterCount" : 5
+    },
+    {
+      "addedLetter" : "S",
+      "id" : "A9DD12C3-4B34-45F3-AA51-CC30D0F7E6CA",
+      "intendedWord" : "GROUSE",
+      "letterCount" : 6
+    },
+    {
+      "addedLetter" : "N",
+      "id" : "34BA4424-1127-4AED-B538-81EE5E391926",
+      "intendedWord" : "SURGEON",
+      "letterCount" : 7
+    },
+    {
+      "addedLetter" : "C",
+      "id" : "13614363-BC6B-4408-9ABE-7E6CA6174663",
+      "intendedWord" : "SCROUNGE",
+      "letterCount" : 8
+    }
+  ],
+  "modifiedDate" : "2026-02-15T04:02:17Z",
+  "name" : "Pennypinch",
+  "version" : "1.0"
+}

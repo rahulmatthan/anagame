@@ -1,0 +1,47 @@
+{
+  "createdDate" : "2026-02-13T15:21:53Z",
+  "description" : "Anagram chain",
+  "difficulty" : "medium",
+  "id" : "42EB8AAD-DCF1-46C0-9F09-2D64BAD93202",
+  "levels" : [
+    {
+      "id" : "149A1DF0-4D4F-498D-B5B7-41E7B661D869",
+      "intendedWord" : "GAS",
+      "letterCount" : 3,
+      "letters" : "GAS"
+    },
+    {
+      "addedLetter" : "N",
+      "id" : "78396693-C4CA-4FC3-9590-9A065E59DCB2",
+      "intendedWord" : "SNAG",
+      "letterCount" : 4
+    },
+    {
+      "addedLetter" : "L",
+      "id" : "A2828630-1D1D-4C80-B696-FB1BBD883ECC",
+      "intendedWord" : "SLANG",
+      "letterCount" : 5
+    },
+    {
+      "addedLetter" : "E",
+      "id" : "1B26443D-44DE-4A16-8D0E-050C74AA611E",
+      "intendedWord" : "ANGLES",
+      "letterCount" : 6
+    },
+    {
+      "addedLetter" : "P",
+      "id" : "E51971F4-22A8-4B47-9824-37FC2EC1CA88",
+      "intendedWord" : "SPANGLE",
+      "letterCount" : 7
+    },
+    {
+      "addedLetter" : "I",
+      "id" : "6C62B011-056A-4045-8F8E-D96E00DB126B",
+      "intendedWord" : "PLEASING",
+      "letterCount" : 8
+    }
+  ],
+  "modifiedDate" : "2026-02-13T15:21:53Z",
+  "name" : "Nice",
+  "version" : "1.0"
+}

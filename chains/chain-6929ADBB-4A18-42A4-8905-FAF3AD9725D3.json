@@ -1,0 +1,47 @@
+{
+  "createdDate" : "2026-02-13T12:42:37Z",
+  "description" : "Anagram chain",
+  "difficulty" : "medium",
+  "id" : "6929ADBB-4A18-42A4-8905-FAF3AD9725D3",
+  "levels" : [
+    {
+      "id" : "8DA21030-2E11-4502-87F7-3C7F646C57BB",
+      "intendedWord" : "TAD",
+      "letterCount" : 3,
+      "letters" : "TAD"
+    },
+    {
+      "addedLetter" : "E",
+      "id" : "3A1E56DC-8B7B-42A5-BA44-26D4B10934DA",
+      "intendedWord" : "DATE",
+      "letterCount" : 4
+    },
+    {
+      "addedLetter" : "R",
+      "id" : "566F74F0-06DA-49D9-B0F8-F8BD92CE4B5D",
+      "intendedWord" : "TRADE",
+      "letterCount" : 5
+    },
+    {
+      "addedLetter" : "H",
+      "id" : "28B8528A-6878-47C6-8F4C-8B98EC2E06B8",
+      "intendedWord" : "HATRED",
+      "letterCount" : 6
+    },
+    {
+      "addedLetter" : "B",
+      "id" : "30E5A5B0-B497-4AA6-852B-A7E4CF966E71",
+      "intendedWord" : "BREADTH",
+      "letterCount" : 7
+    },
+    {
+      "addedLetter" : "E",
+      "id" : "913E3788-5FBA-4FD9-B2DA-4FC5148B390D",
+      "intendedWord" : "BREATHED",
+      "letterCount" : 8
+    }
+  ],
+  "modifiedDate" : "2026-02-13T12:42:37Z",
+  "name" : "Sigh",
+  "version" : "1.0"
+}

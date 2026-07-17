@@ -1,0 +1,47 @@
+{
+  "createdDate" : "2026-02-13T12:33:45Z",
+  "description" : "Anagram chain",
+  "difficulty" : "easy",
+  "id" : "37CC3C00-4606-47A1-A3CF-9D6433093773",
+  "levels" : [
+    {
+      "id" : "F97BF49E-6645-42C0-B8E2-5E1239486AFF",
+      "intendedWord" : "BAR",
+      "letterCount" : 3,
+      "letters" : "BAR"
+    },
+    {
+      "addedLetter" : "K",
+      "id" : "84C22ACF-B93C-4494-9C88-AC0CF9E46C84",
+      "intendedWord" : "BARK",
+      "letterCount" : 4
+    },
+    {
+      "addedLetter" : "E",
+      "id" : "1CC21032-8865-40F6-B3AE-86DD85D8F644",
+      "intendedWord" : "BAKER",
+      "letterCount" : 5
+    },
+    {
+      "addedLetter" : "C",
+      "id" : "C605BD53-8195-4C6D-BDE8-69008C848AD6",
+      "intendedWord" : "BACKER",
+      "letterCount" : 6
+    },
+    {
+      "addedLetter" : "L",
+      "id" : "1658C0B2-1D84-48CD-A652-D627309AFB36",
+      "intendedWord" : "BLACKER",
+      "letterCount" : 7
+    },
+    {
+      "addedLetter" : "I",
+      "id" : "3158E16D-70DD-4C9D-A77A-E8B3D1C79C74",
+      "intendedWord" : "CRABLIKE",
+      "letterCount" : 8
+    }
+  ],
+  "modifiedDate" : "2026-02-13T12:33:45Z",
+  "name" : "Cancer",
+  "version" : "1.0"
+}

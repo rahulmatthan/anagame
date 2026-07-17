@@ -1,0 +1,47 @@
+{
+  "createdDate" : "2026-02-15T03:59:54Z",
+  "description" : "Anagram chain",
+  "difficulty" : "medium",
+  "id" : "F679A72D-33E7-40ED-9E6F-E57388D50CAD",
+  "levels" : [
+    {
+      "id" : "86887785-4662-4724-AADF-BFEB551F7335",
+      "intendedWord" : "ANT",
+      "letterCount" : 3,
+      "letters" : "ANT"
+    },
+    {
+      "addedLetter" : "E",
+      "id" : "F9848928-2D06-451C-9824-6282E4BFF6E3",
+      "intendedWord" : "NEAT",
+      "letterCount" : 4
+    },
+    {
+      "addedLetter" : "M",
+      "id" : "B4D0C13F-E2C6-4004-9118-BB8970C4EB68",
+      "intendedWord" : "MEANT",
+      "letterCount" : 5
+    },
+    {
+      "addedLetter" : "L",
+      "id" : "2015BEFB-674E-45E4-AF08-CAE601DBB79E",
+      "intendedWord" : "MENTAL",
+      "letterCount" : 6
+    },
+    {
+      "addedLetter" : "I",
+      "id" : "F1C031DE-DCC3-4354-8FDD-20F247841D5D",
+      "intendedWord" : "ALIMENT",
+      "letterCount" : 7
+    },
+    {
+      "addedLetter" : "A",
+      "id" : "1C6A3F2A-3978-48E7-B536-5B4AC3E8A79C",
+      "intendedWord" : "LAMINATE",
+      "letterCount" : 8
+    }
+  ],
+  "modifiedDate" : "2026-02-15T03:59:54Z",
+  "name" : "Veneer",
+  "version" : "1.0"
+}

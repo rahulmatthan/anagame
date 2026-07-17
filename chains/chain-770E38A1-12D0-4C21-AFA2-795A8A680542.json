@@ -1,0 +1,47 @@
+{
+  "createdDate" : "2026-02-13T15:34:46Z",
+  "description" : "Anagram chain",
+  "difficulty" : "medium",
+  "id" : "770E38A1-12D0-4C21-AFA2-795A8A680542",
+  "levels" : [
+    {
+      "id" : "09B9D8AB-8F2F-4BBD-B5A2-93EB08B2BB8C",
+      "intendedWord" : "ADD",
+      "letterCount" : 3,
+      "letters" : "ADD"
+    },
+    {
+      "addedLetter" : "E",
+      "id" : "14E94C9D-EF3D-4952-B55A-251AF3909D47",
+      "intendedWord" : "DEAD",
+      "letterCount" : 4
+    },
+    {
+      "addedLetter" : "R",
+      "id" : "A5856FB4-94B0-4E8A-A2FA-502EF6D43C75",
+      "intendedWord" : "DREAD",
+      "letterCount" : 5
+    },
+    {
+      "addedLetter" : "G",
+      "id" : "6A2E2512-9861-4DAB-969F-A37571383282",
+      "intendedWord" : "GRADED",
+      "letterCount" : 6
+    },
+    {
+      "addedLetter" : "E",
+      "id" : "01C3BF38-023E-404F-BAA2-2225ACB1535A",
+      "intendedWord" : "DEGRADE",
+      "letterCount" : 7
+    },
+    {
+      "addedLetter" : "N",
+      "id" : "37811CDA-BDAF-4EF8-9755-7F5B1C9591B9",
+      "intendedWord" : "GARDENED",
+      "letterCount" : 8
+    }
+  ],
+  "modifiedDate" : "2026-02-13T15:34:46Z",
+  "name" : "Horticultural",
+  "version" : "1.0"
+}

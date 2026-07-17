@@ -1,0 +1,47 @@
+{
+  "createdDate" : "2026-02-13T04:44:21Z",
+  "description" : "Anagram chain",
+  "difficulty" : "medium",
+  "id" : "98268CCA-3D54-46E7-945E-9D7EE56B1E1E",
+  "levels" : [
+    {
+      "id" : "BF1837FE-F25D-44C3-A7FA-5249BED16DEE",
+      "intendedWord" : "AGE",
+      "letterCount" : 3,
+      "letters" : "AGE"
+    },
+    {
+      "addedLetter" : "R",
+      "id" : "2E041CEE-BC63-49B5-AE10-D331006FCC3F",
+      "intendedWord" : "GEAR",
+      "letterCount" : 4
+    },
+    {
+      "addedLetter" : "L",
+      "id" : "1633EC8D-E94A-456F-8505-E516BD1A6FC7",
+      "intendedWord" : "LARGE",
+      "letterCount" : 5
+    },
+    {
+      "addedLetter" : "O",
+      "id" : "48A33D5D-0287-43E5-96E5-C6A8D43341BB",
+      "intendedWord" : "GALORE",
+      "letterCount" : 6
+    },
+    {
+      "addedLetter" : "P",
+      "id" : "539BB71C-FB4F-4439-A345-7DA756AEEB2A",
+      "intendedWord" : "PERGOLA",
+      "letterCount" : 7
+    },
+    {
+      "addedLetter" : "F",
+      "id" : "F63506F7-1FFE-404B-AE29-0862FFA6FE2F",
+      "intendedWord" : "LEAPFROG",
+      "letterCount" : 8
+    }
+  ],
+  "modifiedDate" : "2026-02-13T04:44:21Z",
+  "name" : "Jump",
+  "version" : "1.0"
+}

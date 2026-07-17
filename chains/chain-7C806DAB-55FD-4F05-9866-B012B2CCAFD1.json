@@ -1,0 +1,47 @@
+{
+  "createdDate" : "2026-02-13T15:45:44Z",
+  "description" : "Anagram chain",
+  "difficulty" : "medium",
+  "id" : "7C806DAB-55FD-4F05-9866-B012B2CCAFD1",
+  "levels" : [
+    {
+      "id" : "DB057EA7-F483-42A6-9280-8A9B007D2A2D",
+      "intendedWord" : "TAD",
+      "letterCount" : 3,
+      "letters" : "TAD"
+    },
+    {
+      "addedLetter" : "E",
+      "id" : "F486FA75-9AEA-41B1-BAEF-D129CFDD130A",
+      "intendedWord" : "DATE",
+      "letterCount" : 4
+    },
+    {
+      "addedLetter" : "L",
+      "id" : "78B58C19-686C-47D4-B977-21425ADE13E5",
+      "intendedWord" : "DELTA",
+      "letterCount" : 5
+    },
+    {
+      "addedLetter" : "I",
+      "id" : "4CB5FC34-68E7-450A-A0A0-B0F4076370D5",
+      "intendedWord" : "DETAIL",
+      "letterCount" : 6
+    },
+    {
+      "addedLetter" : "C",
+      "id" : "FC6CA1B8-FE17-4E45-896E-26E25E017404",
+      "intendedWord" : "DIALECT",
+      "letterCount" : 7
+    },
+    {
+      "addedLetter" : "E",
+      "id" : "51CDAAE2-27C5-449F-8961-9DD16DCF0899",
+      "intendedWord" : "DELICATE",
+      "letterCount" : 8
+    }
+  ],
+  "modifiedDate" : "2026-02-13T15:45:44Z",
+  "name" : "Frail",
+  "version" : "1.0"
+}

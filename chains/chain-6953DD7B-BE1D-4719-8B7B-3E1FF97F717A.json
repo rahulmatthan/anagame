@@ -1,0 +1,47 @@
+{
+  "createdDate" : "2026-02-15T04:24:46Z",
+  "description" : "Anagram chain",
+  "difficulty" : "medium",
+  "id" : "6953DD7B-BE1D-4719-8B7B-3E1FF97F717A",
+  "levels" : [
+    {
+      "id" : "18E8A8D7-0436-49E5-9835-154E05C693DF",
+      "intendedWord" : "BET",
+      "letterCount" : 3,
+      "letters" : "BET"
+    },
+    {
+      "addedLetter" : "L",
+      "id" : "B0524495-BACF-4B3C-BF7F-4D1B96A73592",
+      "intendedWord" : "BELT",
+      "letterCount" : 4
+    },
+    {
+      "addedLetter" : "A",
+      "id" : "AB6F2405-302C-4EF6-94F1-C2868E8CA028",
+      "intendedWord" : "TABLE",
+      "letterCount" : 5
+    },
+    {
+      "addedLetter" : "I",
+      "id" : "0BF7349F-7753-4CA0-850E-86EFABE9307F",
+      "intendedWord" : "ALBEIT",
+      "letterCount" : 6
+    },
+    {
+      "addedLetter" : "C",
+      "id" : "9A8D813A-68D0-45C0-8FC0-432346555503",
+      "intendedWord" : "CITABLE",
+      "letterCount" : 7
+    },
+    {
+      "addedLetter" : "E",
+      "id" : "C0EFF268-7068-45C0-81EB-9D8DCCD87193",
+      "intendedWord" : "CELIBATE",
+      "letterCount" : 8
+    }
+  ],
+  "modifiedDate" : "2026-02-15T04:24:46Z",
+  "name" : "Pure",
+  "version" : "1.0"
+}

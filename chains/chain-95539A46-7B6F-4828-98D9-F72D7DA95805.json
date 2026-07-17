@@ -1,0 +1,47 @@
+{
+  "createdDate" : "2026-02-13T12:44:14Z",
+  "description" : "Anagram chain",
+  "difficulty" : "hard",
+  "id" : "95539A46-7B6F-4828-98D9-F72D7DA95805",
+  "levels" : [
+    {
+      "id" : "87186019-4422-4EC0-B5BD-DAF709A94332",
+      "intendedWord" : "ARC",
+      "letterCount" : 3,
+      "letters" : "ARC"
+    },
+    {
+      "addedLetter" : "D",
+      "id" : "D8033459-8D9F-498E-B427-3BDF6D93E324",
+      "intendedWord" : "CARD",
+      "letterCount" : 4
+    },
+    {
+      "addedLetter" : "E",
+      "id" : "62F6C7D9-BCA3-4B8E-91E2-D7FFC8C94876",
+      "intendedWord" : "CEDAR",
+      "letterCount" : 5
+    },
+    {
+      "addedLetter" : "T",
+      "id" : "BD82380E-57CD-4E95-8424-AB890A8E7DDA",
+      "intendedWord" : "REDACT",
+      "letterCount" : 6
+    },
+    {
+      "addedLetter" : "U",
+      "id" : "A96A38D6-6C3E-4059-9E13-D6DF00E121EC",
+      "intendedWord" : "TRADUCE",
+      "letterCount" : 7
+    },
+    {
+      "addedLetter" : "O",
+      "id" : "60E1B8F7-50A5-48A4-98F9-B4FA0F925E09",
+      "intendedWord" : "EDUCATOR",
+      "letterCount" : 8
+    }
+  ],
+  "modifiedDate" : "2026-02-13T12:44:14Z",
+  "name" : "Schooled",
+  "version" : "1.0"
+}

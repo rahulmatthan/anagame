@@ -1,0 +1,47 @@
+{
+  "createdDate" : "2026-02-13T14:37:25Z",
+  "description" : "Anagram chain",
+  "difficulty" : "easy",
+  "id" : "ED0361C6-77AC-409B-ABA1-418C1CC78148",
+  "levels" : [
+    {
+      "id" : "610D6A4C-51DA-45FA-BA53-F6DC7C392C06",
+      "intendedWord" : "APE",
+      "letterCount" : 3,
+      "letters" : "APE"
+    },
+    {
+      "addedLetter" : "R",
+      "id" : "5AF1BAA1-02D1-409B-8B21-E16BDCC73314",
+      "intendedWord" : "PEAR",
+      "letterCount" : 4
+    },
+    {
+      "addedLetter" : "O",
+      "id" : "645DDD07-B19E-47D7-82BC-FE19876730F1",
+      "intendedWord" : "OPERA",
+      "letterCount" : 5
+    },
+    {
+      "addedLetter" : "L",
+      "id" : "F0B363AA-0E87-408F-9B4B-134CE20EF454",
+      "intendedWord" : "PAROLE",
+      "letterCount" : 6
+    },
+    {
+      "addedLetter" : "V",
+      "id" : "B125FD49-7F9B-41B2-9C9A-16FB8D4C4F1D",
+      "intendedWord" : "OVERLAP",
+      "letterCount" : 7
+    },
+    {
+      "addedLetter" : "B",
+      "id" : "79DC92D0-B488-4D82-8581-E0AAFD2D1FD1",
+      "intendedWord" : "PROVABLE",
+      "letterCount" : 8
+    }
+  ],
+  "modifiedDate" : "2026-02-13T14:37:25Z",
+  "name" : "Evident",
+  "version" : "1.0"
+}

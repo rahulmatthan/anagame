@@ -1,0 +1,47 @@
+{
+  "createdDate" : "2026-02-13T12:41:22Z",
+  "description" : "Anagram chain",
+  "difficulty" : "medium",
+  "id" : "22D14479-5282-4105-B8DB-98C3BBD352BC",
+  "levels" : [
+    {
+      "id" : "643BFDC8-C108-4CFD-A618-80B097CF9EC9",
+      "intendedWord" : "DAM",
+      "letterCount" : 3,
+      "letters" : "DAM"
+    },
+    {
+      "addedLetter" : "I",
+      "id" : "EF7A8567-F6E1-425E-8550-A1BD72808BAE",
+      "intendedWord" : "AMID",
+      "letterCount" : 4
+    },
+    {
+      "addedLetter" : "E",
+      "id" : "85FC7A09-FE37-4502-880F-7D09D04D02EF",
+      "intendedWord" : "MEDIA",
+      "letterCount" : 5
+    },
+    {
+      "addedLetter" : "D",
+      "id" : "4437704F-B3FA-4343-8627-127969470B51",
+      "intendedWord" : "DIADEM",
+      "letterCount" : 6
+    },
+    {
+      "addedLetter" : "R",
+      "id" : "55E1C30A-1B37-4ED8-97C4-0EF92BAE864A",
+      "intendedWord" : "ADMIRED",
+      "letterCount" : 7
+    },
+    {
+      "addedLetter" : "S",
+      "id" : "D25F3630-E552-40DA-9523-2E891B7B5B13",
+      "intendedWord" : "DISARMED",
+      "letterCount" : 8
+    }
+  ],
+  "modifiedDate" : "2026-02-13T12:41:22Z",
+  "name" : "Tiara",
+  "version" : "1.0"
+}

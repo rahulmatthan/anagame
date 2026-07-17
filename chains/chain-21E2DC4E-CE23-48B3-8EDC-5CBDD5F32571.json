@@ -1,0 +1,47 @@
+{
+  "createdDate" : "2026-02-14T17:05:12Z",
+  "description" : "Anagram chain",
+  "difficulty" : "medium",
+  "id" : "21E2DC4E-CE23-48B3-8EDC-5CBDD5F32571",
+  "levels" : [
+    {
+      "id" : "4EDBB72C-31C4-4A44-ACC3-7EACA09DD0E7",
+      "intendedWord" : "EEL",
+      "letterCount" : 3,
+      "letters" : "EEL"
+    },
+    {
+      "addedLetter" : "R",
+      "id" : "5A97335E-07C0-4FBF-938F-7DF021AA81C6",
+      "intendedWord" : "REEL",
+      "letterCount" : 4
+    },
+    {
+      "addedLetter" : "D",
+      "id" : "0E717915-25FD-4B0F-A4BE-45644B6B9714",
+      "intendedWord" : "ELDER",
+      "letterCount" : 5
+    },
+    {
+      "addedLetter" : "N",
+      "id" : "9FCCB5CC-A1C8-4BBD-85DD-13AEB3B967A3",
+      "intendedWord" : "LENDER",
+      "letterCount" : 6
+    },
+    {
+      "addedLetter" : "A",
+      "id" : "7709A500-A7AF-43AB-8CA6-94336E4B69F2",
+      "intendedWord" : "LEARNED",
+      "letterCount" : 7
+    },
+    {
+      "addedLetter" : "C",
+      "id" : "E1399974-CBFE-4FCF-A769-2855328A8838",
+      "intendedWord" : "CALENDER",
+      "letterCount" : 8
+    }
+  ],
+  "modifiedDate" : "2026-02-14T17:05:12Z",
+  "name" : "Dated",
+  "version" : "1.0"
+}

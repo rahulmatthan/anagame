@@ -1,0 +1,47 @@
+{
+  "createdDate" : "2026-02-13T12:59:00Z",
+  "description" : "Anagram chain",
+  "difficulty" : "easy",
+  "id" : "D0C1F9CA-8B0C-453E-B9D6-C15C2F3E9801",
+  "levels" : [
+    {
+      "id" : "AFC95D15-3B0B-4AE1-8AB3-194EC4A8AFCB",
+      "intendedWord" : "ALE",
+      "letterCount" : 3,
+      "letters" : "ALE"
+    },
+    {
+      "addedLetter" : "S",
+      "id" : "6714B636-F550-4086-B431-E585BAB8330E",
+      "intendedWord" : "SEAL",
+      "letterCount" : 4
+    },
+    {
+      "addedLetter" : "H",
+      "id" : "475B5D0D-2308-4236-B177-B92B5A610276",
+      "intendedWord" : "SHALE",
+      "letterCount" : 5
+    },
+    {
+      "addedLetter" : "S",
+      "id" : "1633352F-532F-4D35-BADB-E79BE547ED9E",
+      "intendedWord" : "HASSLE",
+      "letterCount" : 6
+    },
+    {
+      "addedLetter" : "D",
+      "id" : "42931A70-E9CD-4986-9FB0-026C90D898C2",
+      "intendedWord" : "SLASHED",
+      "letterCount" : 7
+    },
+    {
+      "addedLetter" : "E",
+      "id" : "031E9584-DCBA-498A-B42F-2DCB567E414C",
+      "intendedWord" : "HEADLESS",
+      "letterCount" : 8
+    }
+  ],
+  "modifiedDate" : "2026-02-13T12:59:00Z",
+  "name" : "Horror",
+  "version" : "1.0"
+}

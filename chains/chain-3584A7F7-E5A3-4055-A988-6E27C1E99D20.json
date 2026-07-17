@@ -1,0 +1,47 @@
+{
+  "createdDate" : "2026-02-14T17:08:04Z",
+  "description" : "Anagram chain",
+  "difficulty" : "medium",
+  "id" : "3584A7F7-E5A3-4055-A988-6E27C1E99D20",
+  "levels" : [
+    {
+      "id" : "FD23A66B-2157-4E19-AD7B-8A965E5931A1",
+      "intendedWord" : "SAY",
+      "letterCount" : 3,
+      "letters" : "SAY"
+    },
+    {
+      "addedLetter" : "E",
+      "id" : "1BFE6D7D-C7A6-4860-8876-5712AD73FBDC",
+      "intendedWord" : "EASY",
+      "letterCount" : 4
+    },
+    {
+      "addedLetter" : "T",
+      "id" : "5F2C8F01-4D2F-403C-94BD-ABD03C9B2538",
+      "intendedWord" : "YEAST",
+      "letterCount" : 5
+    },
+    {
+      "addedLetter" : "L",
+      "id" : "46F5A6E4-938A-4F63-BC1B-7BF45E11FD61",
+      "intendedWord" : "STEALY",
+      "letterCount" : 6
+    },
+    {
+      "addedLetter" : "B",
+      "id" : "EDAFFFF9-57E4-450E-97AB-D85273462AF9",
+      "intendedWord" : "BEASTLY",
+      "letterCount" : 7
+    },
+    {
+      "addedLetter" : "N",
+      "id" : "68F4C879-58DB-47A4-A7EA-971EA33F1B3B",
+      "intendedWord" : "ABSENTLY",
+      "letterCount" : 8
+    }
+  ],
+  "modifiedDate" : "2026-02-14T17:08:04Z",
+  "name" : "Unavailable",
+  "version" : "1.0"
+}

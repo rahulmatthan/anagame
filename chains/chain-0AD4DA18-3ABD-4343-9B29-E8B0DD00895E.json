@@ -1,0 +1,47 @@
+{
+  "createdDate" : "2026-02-13T15:16:20Z",
+  "description" : "Anagram chain",
+  "difficulty" : "medium",
+  "id" : "0AD4DA18-3ABD-4343-9B29-E8B0DD00895E",
+  "levels" : [
+    {
+      "id" : "F5221FB7-8D08-428A-8F5F-8BD6513677CF",
+      "intendedWord" : "CAN",
+      "letterCount" : 3,
+      "letters" : "CAN"
+    },
+    {
+      "addedLetter" : "I",
+      "id" : "51A25EBA-9E2A-4BCC-9A3D-A630126BB437",
+      "intendedWord" : "INCA",
+      "letterCount" : 4
+    },
+    {
+      "addedLetter" : "P",
+      "id" : "CBA1B6D8-3916-4D4F-A38E-C7F82C8D6F71",
+      "intendedWord" : "PANIC",
+      "letterCount" : 5
+    },
+    {
+      "addedLetter" : "T",
+      "id" : "501BD94D-F1DA-426E-BE1A-CBBE27142D3A",
+      "intendedWord" : "CATNIP",
+      "letterCount" : 6
+    },
+    {
+      "addedLetter" : "O",
+      "id" : "B0EC247C-F65B-4A96-AD96-DBB8A404DE94",
+      "intendedWord" : "CAPTION",
+      "letterCount" : 7
+    },
+    {
+      "addedLetter" : "L",
+      "id" : "446225DD-F6E5-40C8-BEB2-183C48632601",
+      "intendedWord" : "PLATONIC",
+      "letterCount" : 8
+    }
+  ],
+  "modifiedDate" : "2026-02-13T15:16:20Z",
+  "name" : "Relate",
+  "version" : "1.0"
+}

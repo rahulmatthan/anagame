@@ -1,0 +1,47 @@
+{
+  "createdDate" : "2026-02-13T16:42:20Z",
+  "description" : "Anagram chain",
+  "difficulty" : "medium",
+  "id" : "18EB3E6F-C319-4D7B-BF2D-87D6B6D3DD27",
+  "levels" : [
+    {
+      "id" : "83AA7F2D-8034-40AB-A0C6-1D2E9FBA3E0D",
+      "intendedWord" : "BAT",
+      "letterCount" : 3,
+      "letters" : "BAT"
+    },
+    {
+      "addedLetter" : "O",
+      "id" : "D018F99D-84C7-440E-8F45-330DE03AC776",
+      "intendedWord" : "BOAT",
+      "letterCount" : 4
+    },
+    {
+      "addedLetter" : "N",
+      "id" : "2199B33D-A812-4558-8B51-EFD4F5D28243",
+      "intendedWord" : "BATON",
+      "letterCount" : 5
+    },
+    {
+      "addedLetter" : "I",
+      "id" : "AEAB062A-BFC2-469B-A0E4-BF429D7A8B1D",
+      "intendedWord" : "OBTAIN",
+      "letterCount" : 6
+    },
+    {
+      "addedLetter" : "S",
+      "id" : "58808ABB-C70E-4593-A10E-132188DA366E",
+      "intendedWord" : "BASTION",
+      "letterCount" : 7
+    },
+    {
+      "addedLetter" : "G",
+      "id" : "302C0D57-04AB-4C04-B01D-9BB2FAF8D6D9",
+      "intendedWord" : "BOASTING",
+      "letterCount" : 8
+    }
+  ],
+  "modifiedDate" : "2026-02-13T16:42:20Z",
+  "name" : "Vain",
+  "version" : "1.0"
+}

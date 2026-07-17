@@ -1,0 +1,47 @@
+{
+  "createdDate" : "2026-02-13T12:36:25Z",
+  "description" : "Anagram chain",
+  "difficulty" : "medium",
+  "id" : "547B1D9A-890F-402F-995C-3D55E84634E4",
+  "levels" : [
+    {
+      "id" : "5DD2D7CD-30FF-4A14-9B22-EEE89F4CFC48",
+      "intendedWord" : "ACT",
+      "letterCount" : 3,
+      "letters" : "ACT"
+    },
+    {
+      "addedLetter" : "R",
+      "id" : "4E80C49F-3BE6-470B-9771-9830A81E19DB",
+      "intendedWord" : "CART",
+      "letterCount" : 4
+    },
+    {
+      "addedLetter" : "E",
+      "id" : "2ADEC1A3-F7B1-4A55-9863-396883C280F0",
+      "intendedWord" : "TRACE",
+      "letterCount" : 5
+    },
+    {
+      "addedLetter" : "U",
+      "id" : "70FEF407-A5CE-4346-A59E-E7687C063A9E",
+      "intendedWord" : "CURATE",
+      "letterCount" : 6
+    },
+    {
+      "addedLetter" : "N",
+      "id" : "6288665E-78D4-41DB-A364-FC7A13F6F756",
+      "intendedWord" : "CENTAUR",
+      "letterCount" : 7
+    },
+    {
+      "addedLetter" : "T",
+      "id" : "C05FFCE9-F191-4284-B3CC-6668FC15CD93",
+      "intendedWord" : "TRUNCATE",
+      "letterCount" : 8
+    }
+  ],
+  "modifiedDate" : "2026-02-13T12:36:25Z",
+  "name" : "Shorten",
+  "version" : "1.0"
+}

@@ -1,0 +1,47 @@
+{
+  "createdDate" : "2026-02-13T15:42:09Z",
+  "description" : "Anagram chain",
+  "difficulty" : "medium",
+  "id" : "AC5AEFB2-4D3B-40E3-A658-4755D3099650",
+  "levels" : [
+    {
+      "id" : "6C345A46-DCC8-4DBF-92C0-792B220802CA",
+      "intendedWord" : "FAR",
+      "letterCount" : 3,
+      "letters" : "FAR"
+    },
+    {
+      "addedLetter" : "I",
+      "id" : "7D6F130E-022F-4522-B67B-6121FBD537E8",
+      "intendedWord" : "FAIR",
+      "letterCount" : 4
+    },
+    {
+      "addedLetter" : "R",
+      "id" : "163C5900-9636-4EB9-91EF-C198B959A089",
+      "intendedWord" : "FRIAR",
+      "letterCount" : 5
+    },
+    {
+      "addedLetter" : "E",
+      "id" : "9F667FB7-FCEA-46E4-A183-337C48569FD1",
+      "intendedWord" : "FAIRER",
+      "letterCount" : 6
+    },
+    {
+      "addedLetter" : "N",
+      "id" : "154EA665-66E7-4846-91BA-339C25F9F88E",
+      "intendedWord" : "REFRAIN",
+      "letterCount" : 7
+    },
+    {
+      "addedLetter" : "D",
+      "id" : "A67743EE-3C9B-40FD-BDAA-17FF19500602",
+      "intendedWord" : "INFRARED",
+      "letterCount" : 8
+    }
+  ],
+  "modifiedDate" : "2026-02-13T15:42:09Z",
+  "name" : "Spectrum",
+  "version" : "1.0"
+}

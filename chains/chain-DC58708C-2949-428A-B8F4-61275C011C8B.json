@@ -1,0 +1,47 @@
+{
+  "createdDate" : "2026-02-14T17:03:06Z",
+  "description" : "Anagram chain",
+  "difficulty" : "medium",
+  "id" : "DC58708C-2949-428A-B8F4-61275C011C8B",
+  "levels" : [
+    {
+      "id" : "68D7C925-99C4-4376-9D2A-BCB31189BFB1",
+      "intendedWord" : "AIL",
+      "letterCount" : 3,
+      "letters" : "AIL"
+    },
+    {
+      "addedLetter" : "R",
+      "id" : "2DAFE00E-4477-40CE-8D82-E2B2FC80ADB3",
+      "intendedWord" : "LIAR",
+      "letterCount" : 4
+    },
+    {
+      "addedLetter" : "T",
+      "id" : "D1604E4A-3C9D-4A97-900A-938C7267AC9F",
+      "intendedWord" : "TRIAL",
+      "letterCount" : 5
+    },
+    {
+      "addedLetter" : "U",
+      "id" : "1DE38353-D30C-45BA-9F90-12FE4621C051",
+      "intendedWord" : "RITUAL",
+      "letterCount" : 6
+    },
+    {
+      "addedLetter" : "T",
+      "id" : "D91AF7B1-DCFA-4614-94EC-1EF19577196F",
+      "intendedWord" : "TITULAR",
+      "letterCount" : 7
+    },
+    {
+      "addedLetter" : "O",
+      "id" : "96E319D0-5B97-41F3-9688-8293DE6A47F4",
+      "intendedWord" : "TUTORIAL",
+      "letterCount" : 8
+    }
+  ],
+  "modifiedDate" : "2026-02-14T17:03:06Z",
+  "name" : "Teaching",
+  "version" : "1.0"
+}

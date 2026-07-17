@@ -1,0 +1,47 @@
+{
+  "createdDate" : "2026-02-15T04:19:57Z",
+  "description" : "Anagram chain",
+  "difficulty" : "medium",
+  "id" : "6A5A01FC-8813-408A-A9D3-9C5332C8F976",
+  "levels" : [
+    {
+      "id" : "4245E7F2-3804-4822-A7A6-DC8166B9CF15",
+      "intendedWord" : "NAP",
+      "letterCount" : 3,
+      "letters" : "NAP"
+    },
+    {
+      "addedLetter" : "L",
+      "id" : "3D72439E-5F87-48B3-85E1-5622EAEB453C",
+      "intendedWord" : "PLAN",
+      "letterCount" : 4
+    },
+    {
+      "addedLetter" : "E",
+      "id" : "40BBE766-E777-43CC-9EEB-9128961CAE79",
+      "intendedWord" : "PENAL",
+      "letterCount" : 5
+    },
+    {
+      "addedLetter" : "I",
+      "id" : "27C02C1A-2D9C-4E6A-BF1F-AF6729981AAD",
+      "intendedWord" : "ALPINE",
+      "letterCount" : 6
+    },
+    {
+      "addedLetter" : "R",
+      "id" : "DB5C7A50-F6AF-4585-A244-7801A255BCDB",
+      "intendedWord" : "PRALINE",
+      "letterCount" : 7
+    },
+    {
+      "addedLetter" : "A",
+      "id" : "3C0809FC-CFAE-4457-AFC8-5BF936DBCB50",
+      "intendedWord" : "AIRPLANE",
+      "letterCount" : 8
+    }
+  ],
+  "modifiedDate" : "2026-02-15T04:19:57Z",
+  "name" : "Fly away",
+  "version" : "1.0"
+}

@@ -1,0 +1,47 @@
+{
+  "createdDate" : "2026-02-13T15:19:59Z",
+  "description" : "Anagram chain",
+  "difficulty" : "medium",
+  "id" : "39E8E3D3-B40B-4A53-8CE5-D8BB84FF6F46",
+  "levels" : [
+    {
+      "id" : "8B8A23A9-4512-43CC-8D4F-8AA44AC826A5",
+      "intendedWord" : "AWE",
+      "letterCount" : 3,
+      "letters" : "AWE"
+    },
+    {
+      "addedLetter" : "R",
+      "id" : "158E8970-007F-45ED-9C5A-EB8328B31748",
+      "intendedWord" : "WEAR",
+      "letterCount" : 4
+    },
+    {
+      "addedLetter" : "T",
+      "id" : "D49EFD16-7626-41FA-A655-6D15B64F8968",
+      "intendedWord" : "WATER",
+      "letterCount" : 5
+    },
+    {
+      "addedLetter" : "H",
+      "id" : "E2E10BED-6EF9-42CC-BC12-99894152CC09",
+      "intendedWord" : "WREATH",
+      "letterCount" : 6
+    },
+    {
+      "addedLetter" : "E",
+      "id" : "9B56B602-CC83-42CD-9D4C-8FBE77416B55",
+      "intendedWord" : "WEATHER",
+      "letterCount" : 7
+    },
+    {
+      "addedLetter" : "V",
+      "id" : "23FA6D2F-2A5C-4C30-8BC2-3FE9929E12CF",
+      "intendedWord" : "WHATEVER",
+      "letterCount" : 8
+    }
+  ],
+  "modifiedDate" : "2026-02-13T15:19:59Z",
+  "name" : "Who knows",
+  "version" : "1.0"
+}

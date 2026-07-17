@@ -1,0 +1,47 @@
+{
+  "createdDate" : "2026-02-14T17:23:14Z",
+  "description" : "Anagram chain",
+  "difficulty" : "medium",
+  "id" : "A646D143-14A7-4B5B-9BD8-8889135A6EAF",
+  "levels" : [
+    {
+      "id" : "5608D268-716B-4544-91F9-4AC1EE9DE457",
+      "intendedWord" : "ASH",
+      "letterCount" : 3,
+      "letters" : "ASH"
+    },
+    {
+      "addedLetter" : "R",
+      "id" : "299AA94A-02D1-4335-AC3B-5177844E4099",
+      "intendedWord" : "RASH",
+      "letterCount" : 4
+    },
+    {
+      "addedLetter" : "P",
+      "id" : "E565F6A2-3256-46E6-AE33-599EF2951BE9",
+      "intendedWord" : "SHARP",
+      "letterCount" : 5
+    },
+    {
+      "addedLetter" : "E",
+      "id" : "5493E36E-F5FD-4008-B96A-D6C07CD41AC1",
+      "intendedWord" : "PHRASE",
+      "letterCount" : 6
+    },
+    {
+      "addedLetter" : "N",
+      "id" : "69948B11-A252-4F75-A521-2F3E1C0D75F8",
+      "intendedWord" : "SHARPEN",
+      "letterCount" : 7
+    },
+    {
+      "addedLetter" : "L",
+      "id" : "D753308D-A4DA-464B-BFD1-D57A0468C33D",
+      "intendedWord" : "SHRAPNEL",
+      "letterCount" : 8
+    }
+  ],
+  "modifiedDate" : "2026-02-14T17:23:14Z",
+  "name" : "Fragments",
+  "version" : "1.0"
+}

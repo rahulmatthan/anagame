@@ -1,0 +1,47 @@
+{
+  "createdDate" : "2026-02-15T04:01:34Z",
+  "description" : "Anagram chain",
+  "difficulty" : "medium",
+  "id" : "FFC2B34D-2480-490E-BDFA-0BC6B142360D",
+  "levels" : [
+    {
+      "id" : "61EDBF71-B712-44D3-95DB-B454C959B72F",
+      "intendedWord" : "DIM",
+      "letterCount" : 3,
+      "letters" : "DIM"
+    },
+    {
+      "addedLetter" : "A",
+      "id" : "C5C8FF58-F2DF-4B5A-941A-5455B364EC2E",
+      "intendedWord" : "MAID",
+      "letterCount" : 4
+    },
+    {
+      "addedLetter" : "N",
+      "id" : "EF86664C-1906-44CE-B3B1-DB0913ACBFE4",
+      "intendedWord" : "ADMIN",
+      "letterCount" : 5
+    },
+    {
+      "addedLetter" : "O",
+      "id" : "3F920BE2-2689-45DB-9FA6-AAEC41273732",
+      "intendedWord" : "DOMAIN",
+      "letterCount" : 6
+    },
+    {
+      "addedLetter" : "C",
+      "id" : "397038D5-370F-452E-B0EF-EA4579E3DC1A",
+      "intendedWord" : "NOMADIC",
+      "letterCount" : 7
+    },
+    {
+      "addedLetter" : "E",
+      "id" : "1F6CF280-AEFA-4AA5-B2CD-5378DFB52044",
+      "intendedWord" : "COMEDIAN",
+      "letterCount" : 8
+    }
+  ],
+  "modifiedDate" : "2026-02-15T04:01:34Z",
+  "name" : "That's Funny",
+  "version" : "1.0"
+}

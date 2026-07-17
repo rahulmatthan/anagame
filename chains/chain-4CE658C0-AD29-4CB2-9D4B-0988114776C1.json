@@ -1,0 +1,47 @@
+{
+  "createdDate" : "2026-02-15T04:27:39Z",
+  "description" : "Anagram chain",
+  "difficulty" : "medium",
+  "id" : "4CE658C0-AD29-4CB2-9D4B-0988114776C1",
+  "levels" : [
+    {
+      "id" : "6A76D6FA-EF9E-4305-B234-8FAA576B9F9B",
+      "intendedWord" : "AIR",
+      "letterCount" : 3,
+      "letters" : "AIR"
+    },
+    {
+      "addedLetter" : "N",
+      "id" : "04F2DF06-A00F-408C-979E-02CC9275BB15",
+      "intendedWord" : "RAIN",
+      "letterCount" : 4
+    },
+    {
+      "addedLetter" : "D",
+      "id" : "E2C17F68-052D-43FA-AA77-57506782E3AA",
+      "intendedWord" : "NADIR",
+      "letterCount" : 5
+    },
+    {
+      "addedLetter" : "G",
+      "id" : "A05535BF-561D-4D94-8EE4-D1CD30878886",
+      "intendedWord" : "DARING",
+      "letterCount" : 6
+    },
+    {
+      "addedLetter" : "T",
+      "id" : "A48A75A3-A226-4436-B5AD-0F5DC54EA79F",
+      "intendedWord" : "TRADING",
+      "letterCount" : 7
+    },
+    {
+      "addedLetter" : "E",
+      "id" : "CB1C6FC5-832C-406D-A6C8-A2489554985B",
+      "intendedWord" : "GRADIENT",
+      "letterCount" : 8
+    }
+  ],
+  "modifiedDate" : "2026-02-15T04:27:39Z",
+  "name" : "Slope",
+  "version" : "1.0"
+}

@@ -1,0 +1,47 @@
+{
+  "createdDate" : "2026-02-15T04:31:44Z",
+  "description" : "Anagram chain",
+  "difficulty" : "medium",
+  "id" : "8A831B8B-F4FE-4C5C-ABDD-14939D21B85A",
+  "levels" : [
+    {
+      "id" : "08B48865-0F2C-466F-A821-C07EA565DC81",
+      "intendedWord" : "CON",
+      "letterCount" : 3,
+      "letters" : "CON"
+    },
+    {
+      "addedLetter" : "E",
+      "id" : "75C2BD18-8EB0-4067-9DE7-681BA21554D0",
+      "intendedWord" : "ONCE",
+      "letterCount" : 4
+    },
+    {
+      "addedLetter" : "R",
+      "id" : "9BB2C567-BBC6-4D53-8977-E227AEFEF84C",
+      "intendedWord" : "CRONE",
+      "letterCount" : 5
+    },
+    {
+      "addedLetter" : "S",
+      "id" : "230B6402-8244-4B7E-9A74-3BF429B29FB4",
+      "intendedWord" : "CENSOR",
+      "letterCount" : 6
+    },
+    {
+      "addedLetter" : "D",
+      "id" : "94AA01E2-9A91-44C6-8E9C-D2080C9659AB",
+      "intendedWord" : "SCORNED",
+      "letterCount" : 7
+    },
+    {
+      "addedLetter" : "I",
+      "id" : "E1798724-B311-4AD6-9061-A36DF77F4ECF",
+      "intendedWord" : "CONSIDER",
+      "letterCount" : 8
+    }
+  ],
+  "modifiedDate" : "2026-02-15T04:31:44Z",
+  "name" : "Evaluate",
+  "version" : "1.0"
+}

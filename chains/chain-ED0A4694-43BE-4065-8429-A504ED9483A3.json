@@ -1,0 +1,47 @@
+{
+  "createdDate" : "2026-02-13T15:24:47Z",
+  "description" : "Anagram chain",
+  "difficulty" : "medium",
+  "id" : "ED0A4694-43BE-4065-8429-A504ED9483A3",
+  "levels" : [
+    {
+      "id" : "8D052D7C-ED61-43C1-8A94-761D03050883",
+      "intendedWord" : "FAR",
+      "letterCount" : 3,
+      "letters" : "FAR"
+    },
+    {
+      "addedLetter" : "T",
+      "id" : "FF1031F5-7DC6-453A-8CEF-52AFDB1DF45E",
+      "intendedWord" : "RAFT",
+      "letterCount" : 4
+    },
+    {
+      "addedLetter" : "E",
+      "id" : "4E91F6F6-11EE-4D26-92DB-6C6975CF8316",
+      "intendedWord" : "AFTER",
+      "letterCount" : 5
+    },
+    {
+      "addedLetter" : "L",
+      "id" : "E14CBCDB-DFCA-44ED-8905-A5311644F3A1",
+      "intendedWord" : "FALTER",
+      "letterCount" : 6
+    },
+    {
+      "addedLetter" : "T",
+      "id" : "3244B069-8D0E-4FDC-9B96-1C97E3977F49",
+      "intendedWord" : "FLATTER",
+      "letterCount" : 7
+    },
+    {
+      "addedLetter" : "I",
+      "id" : "52762840-E2CF-49F6-857F-DF46E0781B73",
+      "intendedWord" : "FILTRATE",
+      "letterCount" : 8
+    }
+  ],
+  "modifiedDate" : "2026-02-13T15:24:47Z",
+  "name" : "Sediment",
+  "version" : "1.0"
+}

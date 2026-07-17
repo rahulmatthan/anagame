@@ -1,0 +1,47 @@
+{
+  "createdDate" : "2026-02-14T16:56:54Z",
+  "description" : "Anagram chain",
+  "difficulty" : "medium",
+  "id" : "253770C1-4BBF-4FAF-8C65-BB69DE160857",
+  "levels" : [
+    {
+      "id" : "5FEAA7B3-E8A1-469B-84DA-038F06DBAA26",
+      "intendedWord" : "APT",
+      "letterCount" : 3,
+      "letters" : "APT"
+    },
+    {
+      "addedLetter" : "R",
+      "id" : "311910ED-658A-42CF-B289-2C88739F33EE",
+      "intendedWord" : "TRAP",
+      "letterCount" : 4
+    },
+    {
+      "addedLetter" : "E",
+      "id" : "B9B7DE1F-378E-41D6-B4C4-7BE47885AF90",
+      "intendedWord" : "TAPER",
+      "letterCount" : 5
+    },
+    {
+      "addedLetter" : "D",
+      "id" : "30645FB3-63A9-440C-9904-F3C4B0CE04F3",
+      "intendedWord" : "PARTED",
+      "letterCount" : 6
+    },
+    {
+      "addedLetter" : "O",
+      "id" : "C4D58AB3-73EE-4498-9CF3-C48A13FDC1A1",
+      "intendedWord" : "ADOPTER",
+      "letterCount" : 7
+    },
+    {
+      "addedLetter" : "R",
+      "id" : "7375B921-4EAD-49B1-86C3-B3C049A424FA",
+      "intendedWord" : "TEARDROP",
+      "letterCount" : 8
+    }
+  ],
+  "modifiedDate" : "2026-02-14T16:56:54Z",
+  "name" : "Cry",
+  "version" : "1.0"
+}
